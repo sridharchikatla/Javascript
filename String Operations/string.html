@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<h2>String Examples</h2>
+
+<body>
+<p id="demo"></p>
+
+<script>
+var strOne = "Frist String";
+var strtwo = "Second String";
+var strthree =  "The rain in SPAIN stays mainly in the plain";
+var num = 222;
+
+document.write("The rain in SPAIN stays mainly in the plain");
+
+document.write(strOne.toLowerCase());
+document.write(strtwo.toUpperCase());
+document.write(strthree.charAt(1));
+document.write(strOne.concat(strtwo));
+document.write(String.fromCharCode(5));
+document.write(strOne.endsWith("3"));
+document.write(String.fromCharCode(65));
+document.write(strOne.includes("String"));
+document.write(strOne.indexOf("g"));
+document.write(strOne.lastIndexOf("S"));
+document.write(strOne.localeCompare(strOne));
+document.write(strthree.match(/ain/)); // matching one 
+document.write(strthree.match(/ain/g)); // all matching ain in array
+document.write(strthree.repeat(3)); // repeats number of times or copies
+document.write(strthree.replace(strtwo));
+document.write(strthree.search("ain"));
+document.write(strthree.slice(0,4));
+document.write(strthree.split("ain"));
+document.write(strthree.startsWith("The"));
+document.write(strthree.endsWith("The"));
+document.write(strthree.substr(0,10)); // starting position to number of characters
+document.write(strthree.substring(4,10)); // slice
+document.write(strthree.toLocaleUpperCase());
+document.write(strthree.toLocaleLowerCase());
+document.write(strthree.toUpperCase());
+document.write(strthree.toLowerCase());
+document.write(num.toString());
+document.write(strthree.toString());
+document.write(strthree.trim());
+
+document.write(strthree.valueOf()); // need not call explicitly 
+
+/*
+function myFunction() {
+    var res = "";
+    res = res + Number.isFinite(123) + ": 123<br>";
+    res = res + Number.isFinite(-1.23) + ": -1.23<br>";
+    res = res + Number.isFinite(5-2) + ": 5-2<br>";
+    res = res + Number.isFinite(0) + ": 0<br>";
+    res = res + Number.isFinite('123') + ": '123'<br>";
+    res = res + Number.isFinite('Hello') + ": 'Hello'<br>";
+    res = res + Number.isFinite('2005/12/12') + ": '2005/12/12'<br>";
+    res = res + Number.isFinite(Infinity) + ": Infinity<br>";
+    res = res + Number.isFinite(-Infinity) + ": -Infinity<br>";
+    res = res + Number.isFinite(0 / 0) + ": 0 / 0<br>";
+
+    document.getElementById("demo").innerHTML = res;
+}
+*/
+
+ 
+</script>
+</body>
+</html>
